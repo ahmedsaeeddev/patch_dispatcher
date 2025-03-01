@@ -1,8 +1,6 @@
 // main.js
 
 // Theme toggle functionality
-const themeToggleButton = document.getElementById("theme-toggle");
-const body = document.body;
 
 themeToggleButton.addEventListener("click", () => {
   // Toggle between light and dark themes
@@ -28,11 +26,13 @@ mobileMenuButton.addEventListener("click", () => {
 
 // Language selector functionality
 const languageSelector = document.getElementById("language-select");
-languageSelector.addEventListener("change", (event) => {
-  const selectedLanguage = event.target.value;
-  console.log(`Language changed to: ${selectedLanguage}`);
-  // Implement actual language change logic here
-});
+if (languageSelector) {
+  languageSelector.addEventListener("change", (event) => {
+    const selectedLanguage = event.target.value;
+    console.log(`Language changed to: ${selectedLanguage}`);
+    // Implement actual language change logic here
+  });
+}
 
 // Accessibility controls for font size
 const decreaseFontButton = document.getElementById("decrease-font");
@@ -95,11 +95,41 @@ generatePdfButton.addEventListener("click", () => {
 // Page Transition
 document.querySelectorAll('a').forEach((link) => {
   link.addEventListener("click", (e) => {
-    e.preventDefault();
-    const targetPage = e.target.getAttribute("href");
-    document.querySelector(".page-transition").classList.add("active");
-    setTimeout(() => {
-      window.location.href = targetPage;
-    }, 1000);
+    const targetPage = link.getAttribute("href");
+    // Proceed only if targetPage is a valid link and not just a placeholder
+    if (targetPage && targetPage !== "#" && targetPage.trim() !== "") {
+      e.preventDefault();
+      const transitionOverlay = document.querySelector(".page-transition");
+      if (transitionOverlay) {
+        transitionOverlay.classList.add("active");
+      }
+      setTimeout(() => {
+        window.location.href = targetPage;
+      }, 1000);
+    }
   });
+});
+
+// Theme toggle functionality
+const themeToggleButton = document.getElementById("theme-toggle");
+const body = document.body;
+
+themeToggleButton.addEventListener("click", () => {
+  const icon = themeToggleButton.querySelector("i");
+
+  if (body.classList.contains("dark-theme")) {
+    // Currently dark, so switch to light theme
+    body.classList.remove("dark-theme");
+    body.classList.add("light-theme");
+    if (icon) {
+      icon.classList.replace("fa-sun", "fa-moon");
+    }
+  } else {
+    // Currently light, so switch to dark theme
+    body.classList.remove("light-theme");
+    body.classList.add("dark-theme");
+    if (icon) {
+      icon.classList.replace("fa-moon", "fa-sun");
+    }
+  }
 });
