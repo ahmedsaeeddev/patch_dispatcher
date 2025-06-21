@@ -1,0 +1,351 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Patch Dispatcher - About Us</title>
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/about.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <!-- Include jsPDF library -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
+  <script src="js/main.js" defer></script>
+  <script src="js/about.js" defer></script>
+</head>
+
+<body class="light-theme">
+  <div class="custom-cursor"></div>
+
+  <!-- Header -->
+  <header>
+    <div class="container">
+      <div class="logo">
+        <a href="index.html">
+          <img src="./PATCH-DISPATCHER-PSD.png" alt="Patch Dispatcher Logo" class="lazy-load">
+        </a>
+      </div>
+      <nav>
+        <ul class="nav-links">
+          <li><a href="index.html" data-nav="home">Home</a></li>
+          <li><a href="about.html" class="active" data-nav="about">About</a></li>
+          <li><a href="services.html" data-nav="services">Services</a></li>
+          <li><a href="contact.html" data-nav="contact">Contact</a></li>
+        </ul>
+      </nav>
+      <div class="nav-controls">
+        <button id="theme-toggle" aria-label="Toggle dark/light theme">
+          <i class="fas fa-moon"></i>
+        </button>
+        <button class="mobile-menu-btn" aria-label="Toggle mobile menu">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- About Hero Section -->
+  <section class="about-hero reveal-section">
+    <div class="container">
+      <div class="about-hero-content">
+        <h1 class="translate" data-translate-key="about-title">About Patch Dispatcher</h1>
+        <p class="translate" data-translate-key="about-subtitle">Crafting quality patches since 2010</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Our Story Section -->
+  <section class="our-story reveal-section">
+    <div class="container">
+      <div class="story-content">
+        <div class="story-text">
+          <h2 class="section-title translate" data-translate-key="our-story">Our Story</h2>
+          <p class="translate" data-translate-key="story-p1">
+            Patch Dispatcher began with a simple mission: to create high-quality, custom patches that tell stories and
+            represent identities. Founded in 2010 by a group of textile enthusiasts, our company has grown from a small
+            workshop to a leading provider of premium patches.
+          </p>
+          <p class="translate" data-translate-key="story-p2">
+            What started as a passion project has evolved into a business that serves clients worldwide, from military
+            units and corporate brands to fashion designers and sports teams. Our dedication to craftsmanship and
+            attention to detail has earned us a reputation for excellence in the industry.
+          </p>
+          <p class="translate" data-translate-key="story-p3">
+            Today, we continue to innovate and expand our capabilities, always staying true to our commitment to quality
+            and customer satisfaction.
+          </p>
+        </div>
+        <div class="story-image">
+          <img src="./female-business-owner-working.jpg"
+            alt="Our Workshop" class="lazy-load">
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Our Values Section -->
+  <section class="our-values reveal-section">
+    <div class="container">
+      <h2 class="section-title translate" data-translate-key="our-values">Our Values</h2>
+      <div class="values-grid">
+        <div class="value-card">
+          <div class="value-icon">
+            <i class="fas fa-star"></i>
+          </div>
+          <h3 class="translate" data-translate-key="quality">Quality</h3>
+          <p class="translate" data-translate-key="quality-desc">
+            We never compromise on materials or craftsmanship, ensuring every patch meets our high standards.
+          </p>
+        </div>
+        <div class="value-card">
+          <div class="value-icon">
+            <i class="fas fa-handshake"></i>
+          </div>
+          <h3 class="translate" data-translate-key="integrity">Integrity</h3>
+          <p class="translate" data-translate-key="integrity-desc">
+            We conduct our business with honesty and transparency, building trust with our clients.
+          </p>
+        </div>
+        <div class="value-card">
+          <div class="value-icon">
+            <i class="fas fa-lightbulb"></i>
+          </div>
+          <h3 class="translate" data-translate-key="innovation">Innovation</h3>
+          <p class="translate" data-translate-key="innovation-desc">
+            We continuously explore new techniques and technologies to improve our products.
+          </p>
+        </div>
+        <div class="value-card">
+          <div class="value-icon">
+            <i class="fas fa-users"></i>
+          </div>
+          <h3 class="translate" data-translate-key="community">Community</h3>
+          <p class="translate" data-translate-key="community-desc">
+            We value the relationships we build with clients and the communities we serve.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Our Process Section -->
+  <section class="our-process reveal-section">
+    <div class="container">
+      <h2 class="section-title translate" data-translate-key="our-process">Our Process</h2>
+      <div class="process-timeline">
+        <div class="process-step">
+          <div class="step-number">1</div>
+          <div class="step-content">
+            <h3 class="translate" data-translate-key="consultation">Consultation</h3>
+            <p class="translate" data-translate-key="consultation-desc">
+              We begin with a detailed discussion of your needs, preferences, and specifications.
+            </p>
+          </div>
+        </div>
+        <div class="process-step">
+          <div class="step-number">2</div>
+          <div class="step-content">
+            <h3 class="translate" data-translate-key="design">Design</h3>
+            <p class="translate" data-translate-key="design-desc">
+              Our designers create a custom patch concept based on your requirements.
+            </p>
+          </div>
+        </div>
+        <div class="process-step">
+          <div class="step-number">3</div>
+          <div class="step-content">
+            <h3 class="translate" data-translate-key="approval">Approval</h3>
+            <p class="translate" data-translate-key="approval-desc">
+              We provide a digital proof for your review and make any necessary adjustments.
+            </p>
+          </div>
+        </div>
+        <div class="process-step">
+          <div class="step-number">4</div>
+          <div class="step-content">
+            <h3 class="translate" data-translate-key="production">Production</h3>
+            <p class="translate" data-translate-key="production-desc">
+              Once approved, we carefully craft your patches using premium materials.
+            </p>
+          </div>
+        </div>
+        <div class="process-step">
+          <div class="step-number">5</div>
+          <div class="step-content">
+            <h3 class="translate" data-translate-key="delivery">Delivery</h3>
+            <p class="translate" data-translate-key="delivery-desc">
+              After the design is finalized, you will receive patches within 7 to 8 working days.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Team Section -->
+  <section class="our-team reveal-section">
+    <div class="container">
+      <h2 class="section-title translate" data-translate-key="our-team">Meet Our Team</h2>
+      <div class="team-grid">
+        <div class="team-member">
+          <div class="member-image">
+            <img src="./austin.png" alt="Austin" class="lazy-load">
+          </div>
+          <div class="member-info">
+            <h3>Austin</h3>
+            <p class="member-title translate" data-translate-key="sales-agent">Sales Agent</p>
+          </div>
+        </div>
+        <div class="team-member">
+          <div class="member-image">
+            <img src="./mick.png" alt="Mick" class="lazy-load">
+          </div>
+          <div class="member-info">
+            <h3>Mick</h3>
+            <p class="member-title translate" data-translate-key="sales-agent">Sales Agent</p>
+          </div>
+        </div>
+        <div class="team-member">
+          <div class="member-image">
+            <img src="./dale.png" alt="Dale" class="lazy-load">
+          </div>
+          <div class="member-info">
+            <h3>Dale</h3>
+            <p class="member-title translate" data-translate-key="sales-agent">Sales Agent</p>
+          </div>
+        </div>
+        <div class="team-member">
+          <div class="member-image">
+            <img src="./steven.png" alt="Steven" class="lazy-load">
+          </div>
+          <div class="member-info">
+            <h3>Steven</h3>
+            <p class="member-title translate" data-translate-key="sales-agent">Sales Agent</p>
+          </div>
+        </div>
+        <div class="team-member">
+          <div class="member-image">
+            <img src="./jack.png" alt="Jack" class="lazy-load">
+          </div>
+          <div class="member-info">
+            <h3>Jack</h3>
+            <p class="member-title translate" data-translate-key="designer">Designer</p>
+          </div>
+        </div>
+        <div class="team-member">
+          <div class="member-image">
+            <img src="./john.png" alt="John" class="lazy-load">
+          </div>
+          <div class="member-info">
+            <h3>John</h3>
+            <p class="member-title translate" data-translate-key="designer">Designer</p>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Download Portfolio Section -->
+  <section class="download-portfolio reveal-section">
+    <div class="container">
+      <div class="portfolio-content">
+        <h2 class="translate" data-translate-key="portfolio-title">Download Our Portfolio</h2>
+        <p class="translate" data-translate-key="portfolio-desc">
+          Get inspired by browsing our collection of past projects and designs
+        </p>
+        <button id="generate-pdf" class="btn btn-primary translate" data-translate-key="download-portfolio">
+          <i class="fas fa-download"></i> Download Portfolio
+        </button>
+      </div>
+    </div>
+  </section>
+
+  <!-- Accessibility Controls -->
+  <div class="accessibility-controls">
+    <button id="accessibility-toggle" aria-label="Accessibility options">
+      <i class="fas fa-universal-access"></i>
+    </button>
+    <div class="accessibility-panel">
+      <h3 class="translate" data-translate-key="accessibility-title">Accessibility Options</h3>
+      <div class="accessibility-option">
+        <label for="high-contrast" class="translate" data-translate-key="high-contrast">High Contrast</label>
+        <input type="checkbox" id="high-contrast">
+      </div>
+      <div class="accessibility-option">
+        <label for="text-to-speech" class="translate" data-translate-key="text-to-speech">Text to Speech</label>
+        <input type="checkbox" id="text-to-speech">
+      </div>
+      <div class="accessibility-option">
+        <label for="font-size" class="translate" data-translate-key="font-size">Font Size</label>
+        <div class="font-size-controls">
+          <button id="decrease-font" aria-label="Decrease font size">A-</button>
+          <button id="reset-font" aria-label="Reset font size">A</button>
+          <button id="increase-font" aria-label="Increase font size">A+</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Footer -->
+  <footer>
+    <div class="container">
+      <div class="footer-content">
+        <div class="footer-logo">
+          <img src="./PATCH-DISPATCHER-PSD.png" alt="Patch Dispatcher Logo" width="90" class="lazy-load">
+          <p class="translate" data-translate-key="footer-tagline">Quality patches for every purpose</p>
+        </div>
+        <div class="footer-links">
+          <div class="footer-column">
+            <h3 class="translate" data-translate-key="quick-links">Quick Links</h3>
+            <ul>
+              <li><a href="index.html" class="translate" data-translate-key="home">Home</a></li>
+              <li><a href="about.html" class="translate" data-translate-key="about">About</a></li>
+              <li><a href="services.html" class="translate" data-translate-key="services">Services</a></li>
+              <li><a href="contact.html" class="translate" data-translate-key="contact">Contact</a></li>
+            </ul>
+          </div>
+          <div class="footer-column">
+            <h3 class="translate" data-translate-key="services">Services</h3>
+            <ul>
+              <li><a href="services.html#military" class="translate" data-translate-key="military-patches">Embroidery
+                  Patches</a></li>
+              <li><a href="services.html#corporate" class="translate" data-translate-key="corporate-patches">PVC
+                  Patches</a></li>
+              <li><a href="services.html#fashion" class="translate" data-translate-key="fashion-patches">Chenille
+                  Patches</a></li>
+            </ul>
+          </div>
+          <div class="footer-column">
+            <h3 class="translate" data-translate-key="contact-us">Contact Us</h3>
+            <ul class="contact-info">
+              <li><i class="fas fa-map-marker-alt"></i> <span class="translate" data-translate-key="address">1660 Rose
+                  Lane Romeoville, IL 60446</span></li>
+              <li><i class="fas fa-phone"></i> <a href="tel:+13313338589">+1 331-333-8589</span></li>
+              <li><i class="fas fa-envelope"></i> <a
+                  href="mailto:patchdispatcher@gmail.com">patchdispatcher@gmail.com</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p class="copyright translate" data-translate-key="copyright">&copy; 2025 Patch Dispatcher. All rights reserved.
+        </p>
+        <div class="social-links">
+          <a href="https://www.facebook.com/people/Patch-Dispatcher/pfbid02AYd3XuXXrmTv6vwYUBK3LT4qb9jAzby168gnYSBGKjvJqhVSYxYJxbaTdrmxinS7l/"
+            aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+          <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+          <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+          <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Page Transition Overlay -->
+  <div class="page-transition"></div>
+</body>
+
+</html>

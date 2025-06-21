@@ -1,0 +1,332 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Patch Dispatcher - Contact Us</title>
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/contact.css">
+  <link rel="stylesheet" href="css/services.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <script src="js/main.js" defer></script>
+  <script src="js/contact.js" defer></script>
+</head>
+
+<body class="light-theme">
+  <div class="custom-cursor"></div>
+
+  <!-- Header -->
+  <header>
+    <div class="container">
+      <div class="logo">
+        <a href="index.html">
+          <img src="./PATCH-DISPATCHER-PSD.png" alt="Patch Dispatcher Logo" class="lazy-load">
+        </a>
+      </div>
+      <nav>
+        <ul class="nav-links">
+          <li><a href="index.html" data-nav="home">Home</a></li>
+          <li><a href="about.html" data-nav="about">About</a></li>
+          <li><a href="services.html" data-nav="services">Services</a></li>
+          <li><a href="contact.html" class="active" data-nav="contact">Contact</a></li>
+        </ul>
+      </nav>
+      <div class="nav-controls">
+        <div class="language-selector">
+          <select id="language-select">
+            <option value="en">English</option>
+            <option value="es">Español</option>
+            <option value="de">Deutsch</option>
+            <option value="nl">Nederlands</option>
+            <option value="zh">中文</option>
+            <option value="ja">日本語</option>
+          </select>
+        </div>
+        <button id="theme-toggle" aria-label="Toggle dark/light theme">
+          <i class="fas fa-moon"></i>
+        </button>
+        <button class="mobile-menu-btn" aria-label="Toggle mobile menu">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Contact Hero Section -->
+  <section class="contact-hero reveal-section">
+    <div class="container">
+      <div class="contact-hero-content">
+        <h1 class="translate" data-translate-key="contact-title">Contact Us</h1>
+        <p class="translate" data-translate-key="contact-subtitle">Get in touch for custom patches and quotes</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact Information Section -->
+  <section class="contact-info-section reveal-section">
+    <div class="container">
+      <div class="contact-grid">
+        <div class="contact-info">
+          <h2 class="section-title translate" data-translate-key="reach-us">Reach Us</h2>
+          <div class="info-cards">
+            <div class="info-card">
+              <div class="info-icon">
+                <i class="fas fa-map-marker-alt"></i>
+              </div>
+              <div class="info-content">
+                <h3 class="translate" data-translate-key="our-location">Our Location</h3>
+                <p class="translate" data-translate-key="address-full">1660 Rose
+                  Lane Romeoville, IL 60446</p>
+              </div>
+            </div>
+            <div class="info-card">
+              <div class="info-icon">
+                <i class="fas fa-phone-alt"></i>
+              </div>
+              <div class="info-content">
+                <h3 class="translate" data-translate-key="phone">Phone</h3>
+                <a href="tel:+13313338589">+1 331-333-8589</p>
+              </div>
+            </div>
+            <div class="info-card">
+              <div class="info-icon">
+                <i class="fas fa-envelope"></i>
+              </div>
+              <div class="info-content">
+                <h3 class="translate" data-translate-key="email">Email</h3>
+                <a href="mailto:patchdispatcher@gmail.com">patchdispatcher@gmail.com</a>
+              </div>
+            </div>
+
+          </div>
+          <div class="social-connect">
+            <h3 class="translate" data-translate-key="connect">Connect With Us</h3>
+            <div class="social-icons">
+              <a href="https://www.facebook.com/people/Patch-Dispatcher/pfbid02AYd3XuXXrmTv6vwYUBK3LT4qb9jAzby168gnYSBGKjvJqhVSYxYJxbaTdrmxinS7l/"
+                aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+              <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+              <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+              <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+            </div>
+          </div>
+        </div>
+        <div class="contact-form-container">
+          <h2 class="section-title translate" data-translate-key="send-message">Send Us a Message</h2>
+          <form id="contact-form" class="contact-form">
+            <div class="form-group">
+              <label for="name" class="translate" data-translate-key="name">Name</label>
+              <input type="text" id="name" name="name" required>
+              <div class="error-message" id="name-error"></div>
+            </div>
+            <div class="form-group">
+              <label for="email" class="translate" data-translate-key="email-address">Email Address</label>
+              <input type="email" id="email" name="email" required>
+              <div class="error-message" id="email-error"></div>
+            </div>
+            <div class="form-group">
+              <label for="phone" class="translate" data-translate-key="phone-number">Phone Number</label>
+              <input type="tel" id="phone" name="phone">
+              <div class="error-message" id="phone-error"></div>
+            </div>
+            <div class="form-group">
+              <label for="subject" class="translate" data-translate-key="subject">Subject</label>
+              <select id="subject" name="subject" required>
+                <option value="" disabled selected class="translate" data-translate-key="select-subject">Select a
+                  subject</option>
+                <option value="quote" class="translate" data-translate-key="request-quote">Request a Quote</option>
+                <option value="custom" class="translate" data-translate-key="custom-design">Custom Design Inquiry
+                </option>
+                <option value="bulk" class="translate" data-translate-key="bulk-order">Bulk Order Information</option>
+                <option value="other" class="translate" data-translate-key="other">Other</option>
+              </select>
+              <div class="error-message" id="subject-error"></div>
+            </div>
+            <div class="form-group">
+              <label for="message" class="translate" data-translate-key="message">Message</label>
+              <textarea id="message" name="message" rows="5" required></textarea>
+              <div class="error-message" id="message-error"></div>
+            </div>
+            <div class="form-group">
+              <div class="checkbox-group">
+                <input type="checkbox" id="consent" name="consent" required>
+                <label for="consent" class="translate" data-translate-key="consent">I agree to the processing of my
+                  personal data in accordance with the Privacy Policy</label>
+              </div>
+              <div class="error-message" id="consent-error"></div>
+            </div>
+            <div class="form-submit">
+              <button type="submit" class="btn btn-primary translate" data-translate-key="send">Send Message</button>
+              <div class="form-status" id="form-status"></div>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Map Section -->
+  <section class="map-section reveal-section">
+    <div class="container">
+      <h2 class="section-title translate" data-translate-key="find-us">Find Us</h2>
+      <section class="map-section">
+        <div class="map-container">
+          <div class="map-placeholder">
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2982.7945281685124!2d-88.14649102406652!3d41.61695468172445!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x880e5fa35856b011%3A0x3b10fceeb0a530db!2s1660%20Rose%20Ln%2C%20Romeoville%2C%20IL%2060446%2C%20USA!5e0!3m2!1sen!2s!4v1750424681246!5m2!1sen!2s"
+              allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"
+              class="responsive-map"></iframe>
+          </div>
+        </div>
+      </section>
+
+    </div>
+  </section>
+
+  <!-- FAQ Section -->
+  <section class="faq-section reveal-section">
+    <div class="container">
+      <h2 class="section-title translate" data-translate-key="faq">Frequently Asked Questions</h2>
+      <div class="faq-accordion">
+        <div class="faq-item">
+          <div class="faq-question">
+            <h3 class="translate" data-translate-key="faq-1-q">What is the minimum order quantity?</h3>
+            <span class="faq-icon"><i class="fas fa-plus"></i></span>
+          </div>
+          <div class="faq-answer">
+            <p class="translate" data-translate-key="faq-1-a">Our minimum order quantity is 25 patches. For smaller
+              quantities, please contact us for custom pricing.</p>
+          </div>
+        </div>
+        <div class="faq-item">
+          <div class="faq-question">
+            <h3 class="translate" data-translate-key="faq-2-q">How long does production take?</h3>
+            <span class="faq-icon"><i class="fas fa-plus"></i></span>
+          </div>
+          <div class="faq-answer">
+            <p class="translate" data-translate-key="faq-2-a">Standard production time is 2-3 weeks after design
+              approval. Rush orders may be available for an additional fee.</p>
+          </div>
+        </div>
+        <div class="faq-item">
+          <div class="faq-question">
+            <h3 class="translate" data-translate-key="faq-3-q">Can you match specific colors?</h3>
+            <span class="faq-icon"><i class="fas fa-plus"></i></span>
+          </div>
+          <div class="faq-answer">
+            <p class="translate" data-translate-key="faq-3-a">Yes, we can match specific Pantone colors for your patches
+              to ensure brand consistency.</p>
+          </div>
+        </div>
+        <div class="faq-item">
+          <div class="faq-question">
+            <h3 class="translate" data-translate-key="faq-4-q">Do you offer design services?</h3>
+            <span class="faq-icon"><i class="fas fa-plus"></i></span>
+          </div>
+          <div class="faq-answer">
+            <p class="translate" data-translate-key="faq-4-a">Yes, our in-house design team can create custom patch
+              designs based on your ideas or refine existing artwork.</p>
+          </div>
+        </div>
+        <div class="faq-item">
+          <div class="faq-question">
+            <h3 class="translate" data-translate-key="faq-5-q">What file formats do you accept for designs?</h3>
+            <span class="faq-icon"><i class="fas fa-plus"></i></span>
+          </div>
+          <div class="faq-answer">
+            <p class="translate" data-translate-key="faq-5-a">We accept vector files (AI, EPS, PDF) for best results. We
+              can also work with high-resolution JPG or PNG files.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Accessibility Controls -->
+  <div class="accessibility-controls">
+    <button id="accessibility-toggle" aria-label="Accessibility options">
+      <i class="fas fa-universal-access"></i>
+    </button>
+    <div class="accessibility-panel">
+      <h3 class="translate" data-translate-key="accessibility-title">Accessibility Options</h3>
+      <div class="accessibility-option">
+        <label for="high-contrast" class="translate" data-translate-key="high-contrast">High Contrast</label>
+        <input type="checkbox" id="high-contrast">
+      </div>
+      <div class="accessibility-option">
+        <label for="text-to-speech" class="translate" data-translate-key="text-to-speech">Text to Speech</label>
+        <input type="checkbox" id="text-to-speech">
+      </div>
+      <div class="accessibility-option">
+        <label for="font-size" class="translate" data-translate-key="font-size">Font Size</label>
+        <div class="font-size-controls">
+          <button id="decrease-font" aria-label="Decrease font size">A-</button>
+          <button id="reset-font" aria-label="Reset font size">A</button>
+          <button id="increase-font" aria-label="Increase font size">A+</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Footer -->
+  <footer>
+    <div class="container">
+      <div class="footer-content">
+        <div class="footer-logo">
+          <img src="./PATCH-DISPATCHER-PSD.png" alt="Patch Dispatcher Logo" width="90" class="lazy-load">
+          <p class="translate" data-translate-key="footer-tagline">Quality patches for every purpose</p>
+        </div>
+        <div class="footer-links">
+          <div class="footer-column">
+            <h3 class="translate" data-translate-key="quick-links">Quick Links</h3>
+            <ul>
+              <li><a href="index.html" class="translate" data-translate-key="home">Home</a></li>
+              <li><a href="about.html" class="translate" data-translate-key="about">About</a></li>
+              <li><a href="services.html" class="translate" data-translate-key="services">Services</a></li>
+              <li><a href="contact.html" class="translate" data-translate-key="contact">Contact</a></li>
+            </ul>
+          </div>
+          <div class="footer-column">
+            <h3 class="translate" data-translate-key="services">Services</h3>
+            <ul>
+              <li><a href="services.html#military" class="translate" data-translate-key="military-patches">Embroidery
+                  Patches</a></li>
+              <li><a href="services.html#corporate" class="translate" data-translate-key="corporate-patches">PVC
+                  Patches</a></li>
+              <li><a href="services.html#fashion" class="translate" data-translate-key="fashion-patches">Chenille
+                  Patches</a></li>
+            </ul>
+          </div>
+          <div class="footer-column">
+            <h3 class="translate" data-translate-key="contact-us">Contact Us</h3>
+            <ul class="contact-info">
+              <li><i class="fas fa-map-marker-alt"></i> <span class="translate" data-translate-key="address">1660 Rose
+                  Lane Romeoville, IL 60446</span></li>
+              <li><i class="fas fa-phone"></i> <a href="tel:+13313338589">+1 331-333-8589</span></li>
+              <li><i class="fas fa-envelope"></i> <a
+                  href="mailto:patchdispatcher@gmail.com">patchdispatcher@gmail.com</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p class="copyright translate" data-translate-key="copyright">&copy; 2025 Patch Dispatcher. All rights reserved.
+        </p>
+        <div class="social-links">
+          <a href="https://www.facebook.com/profile.php?id=61577512170411" aria-label="Facebook"><i
+              class="fab fa-facebook-f"></i></a>
+          <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+          <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+          <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Page Transition Overlay -->
+  <div class="page-transition"></div>
+</body>
+
+</html>

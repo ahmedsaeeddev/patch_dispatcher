@@ -1,0 +1,396 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Patch Dispatcher - Services</title>
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/services.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <script src="js/main.js" defer></script>
+  <script src="js/services.js" defer></script>
+</head>
+
+<body class="light-theme">
+  <div class="custom-cursor"></div>
+
+  <!-- Header -->
+  <header>
+    <div class="container">
+      <div class="logo">
+        <a href="index.html">
+          <img src="./PATCH-DISPATCHER-PSD.png" alt="Patch Dispatcher Logo" class="lazy-load">
+        </a>
+      </div>
+      <nav>
+        <ul class="nav-links">
+          <li><a href="index.html" data-nav="home">Home</a></li>
+          <li><a href="about.html" data-nav="about">About</a></li>
+          <li><a href="services.html" class="active" data-nav="services">Services</a></li>
+          <li><a href="contact.html" data-nav="contact">Contact</a></li>
+        </ul>
+      </nav>
+      <div class="nav-controls">
+        <button id="theme-toggle" aria-label="Toggle dark/light theme">
+          <i class="fas fa-moon"></i>
+        </button>
+        <button class="mobile-menu-btn" aria-label="Toggle mobile menu">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Services Hero Section -->
+  <section class="services-hero reveal-section">
+    <div class="container">
+      <div class="services-hero-content">
+        <h1 class="translate" data-translate-key="services-title">Our Services</h1>
+        <p class="translate" data-translate-key="services-subtitle">Custom patches for every need and occasion</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Services Overview -->
+  <section class="services-overview reveal-section">
+    <div class="container">
+      <div class="services-tabs">
+        <button class="tab-btn active" data-tab="all">All</button>
+        <button class="tab-btn" data-tab="embroidery">Embroidery</button>
+        <button class="tab-btn" data-tab="chenille">Chenille</button>
+        <button class="tab-btn" data-tab="pvc-rubber">PVC Rubber</button>
+      </div>
+
+      <div class="services-grid">
+        <!-- PVC Rubber Patches -->
+        <div class="service-card" data-category="pvc-rubber" id="pvc-rubber">
+          <div class="service-image">
+            <img src="./pvc-rubber-patches.JPG" alt="PVC Rubber Patches" class="lazy-load">
+          </div>
+          <div class="service-info">
+            <h2 class="translate" data-translate-key="pvc-rubber-patches">PVC Rubber Patches</h2>
+            <p class="translate" data-translate-key="pvc-rubber-patches-desc">
+              Built to endure the toughest environments, our custom PVC rubber patches combine rugged durability with
+              bold design. These waterproof, flexible patches are perfect for tactical gear, outdoor apparel, and
+              heavy-use applications. With vibrant colors, 3D detailing, and weather-resistant performance, they’re
+              ideal for showcasing logos, emblems, and branding that needs to stand out and last.
+            </p>
+            <ul class="service-features">
+              <li class="translate" data-translate-key="pvc-rubber-patches-feature-1">Durable materials for field use
+              </li>
+              <li class="translate" data-translate-key="pvc-rubber-patches-feature-2">Precise embroidery for detailed
+                designs</li>
+              <li class="translate" data-translate-key="pvc-rubber-patches-feature-3">IR (Infrared) compatible options
+              </li>
+              <li class="translate" data-translate-key="pvc-rubber-patches-feature-4">Hook and loop backing available
+              </li>
+            </ul>
+            <a href="contact.html" class="btn btn-primary translate" data-translate-key="request-quote">Request a
+              Quote</a>
+          </div>
+        </div>
+
+        <!-- Embroidery Patches -->
+        <div class="service-card" data-category="embroidery" id="embroidery">
+          <div class="service-image">
+            <img src="./embroidery-patches.JPG" alt="Embroidery Patches" class="lazy-load">
+          </div>
+          <div class="service-info">
+            <h2 class="translate" data-translate-key="embroidery-patches">Embroidery Patches</h2>
+            <p class="translate" data-translate-key="embroidery-patches-desc">Our embroidery patches are designed with
+              exceptional craftsmanship, combining durability and detail for a premium finish. We use top-tier threads
+              and fabrics that resist fading and fraying, ensuring your patches maintain their look even under tough
+              conditions. Whether it’s custom logos, unit insignias, rank badges, or commemorative designs, each patch
+              is made to reflect pride, tradition, and excellence in every stitch.</p>
+            <ul class="service-features">
+              <li class="translate" data-translate-key="embroidery-patches-feature-1">Trendy designs and styles</li>
+              <li class="translate" data-translate-key="embroidery-patches-feature-2">Iron-on options for easy
+                application</li>
+              <li class="translate" data-translate-key="embroidery-patches-feature-3">Washable and durable for everyday
+                wear</li>
+              <li class="translate" data-translate-key="embroidery-patches-feature-4">Custom shapes and sizes available
+              </li>
+            </ul>
+            <a href="contact.html" class="btn btn-primary translate" data-translate-key="request-quote">Request a
+              Quote</a>
+          </div>
+        </div>
+
+        <!-- Chenille Patches -->
+        <div class="service-card" data-category="chenille" id="chenille">
+          <div class="service-image">
+            <img src="./chenille.png" alt="Chenille Patches" class="lazy-load">
+          </div>
+          <div class="service-info">
+            <h2 class="translate" data-translate-key="chenille-patches">Chenille Patches</h2>
+            <p class="translate" data-translate-key="chenille-patches-desc">Show off your team pride with our custom
+              chenille patches—bold, textured, and full of character. Ideal for varsity jackets, sports uniforms, and
+              commemorative gear, these patches bring your team’s logo, mascot, or achievements to life in vibrant,
+              fluffy detail. From youth leagues to pro teams, we craft each patch to celebrate unity, tradition, and
+              athletic excellence.</p>
+            <ul class="service-features">
+              <li class="translate" data-translate-key="chenille-patches-feature-1">Vibrant colors that maintain their
+                brightness
+              </li>
+              <li class="translate" data-translate-key="chenille-patches-feature-2">Durable construction for active wear
+              </li>
+              <li class="translate" data-translate-key="chenille-patches-feature-3">Championship and commemorative
+                designs</li>
+              <li class="translate" data-translate-key="chenille-patches-feature-4">Team discounts for bulk orders</li>
+            </ul>
+            <a href="contact.html" class="btn btn-primary translate" data-translate-key="request-quote">Request a
+              Quote</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Patch Types Section -->
+  <section class="patch-types reveal-section">
+    <div class="container">
+      <h2 class="section-title translate" data-translate-key="patch-types">Patch Types We Offer</h2>
+      <div class="types-grid">
+        <div class="type-card">
+          <div class="type-image">
+            <img src="./embroidery-patches-1.JPG" alt="Embroidered Patches" class="lazy-load">
+          </div>
+          <h3 class="translate" data-translate-key="embroidered">Embroidered Patches</h3>
+          <p class="translate" data-translate-key="embroidered-desc">Traditional patches with raised thread designs,
+            offering a classic and textured look.</p>
+        </div>
+        <div class="type-card">
+          <div class="type-image">
+            <img src="./pvc-rubber-patches.JPG" alt="PVC Patches" class="lazy-load">
+          </div>
+          <h3 class="translate" data-translate-key="pvc">PVC Patches</h3>
+          <p class="translate" data-translate-key="pvc-desc">Durable, waterproof patches with a 3D effect, ideal for
+            outdoor and tactical use.</p>
+        </div>
+        <div class="type-card">
+          <div class="type-image">
+            <img src="./chenille.png" alt="Chenille Patches" class="lazy-load">
+          </div>
+          <h3 class="translate" data-translate-key="chenille">Chenille Patches</h3>
+          <p class="translate" data-translate-key="chenille-desc">Fuzzy, textured patches commonly used for varsity
+            letters and sports emblems.</p>
+        </div>
+        <div class="type-card">
+          <div class="type-image">
+            <img src="./sublimation-patches.JPG" alt="Sublimation Patches" class="lazy-load">
+          </div>
+          <h3 class="translate" data-translate-key="sublimation">Sublimation Patches</h3>
+          <p class="translate" data-translate-key="sublimation-desc">Full-color printed patches with vibrant detail,
+            perfect for complex designs and photorealistic images.</p>
+        </div>
+        <div class="type-card">
+          <div class="type-image">
+            <img src="./woven-patches.jpg" alt="Woven Patches" class="lazy-load">
+          </div>
+          <h3 class="translate" data-translate-key="woven">Woven Patches</h3>
+          <p class="translate" data-translate-key="woven-desc">High-definition patches with intricate details and a flat
+            profile, perfect for uniform badges and fine designs.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Backing Options Section -->
+  <section class="backing-options reveal-section">
+    <div class="container">
+      <h2 class="section-title translate" data-translate-key="backing-options">Backing Options</h2>
+      <div class="options-grid">
+        <div class="option-card">
+          <div class="option-icon">
+            <i class="fa-solid fa-print"></i>
+          </div>
+          <h3 class="translate" data-translate-key="iron-on">Iron-On</h3>
+          <p class="translate" data-translate-key="iron-on-desc">Heat-activated adhesive backing for easy application to
+            fabric.</p>
+        </div>
+        <div class="option-card">
+          <div class="option-icon">
+            <i class="fas fa-thumbtack"></i>
+          </div>
+          <h3 class="translate" data-translate-key="sew-on">Sew-On</h3>
+          <p class="translate" data-translate-key="sew-on-desc">Traditional backing for permanent attachment to
+            garments.</p>
+        </div>
+        <div class="option-card">
+          <div class="option-icon">
+            <i class="fas fa-grip-lines"></i>
+          </div>
+          <h3 class="translate" data-translate-key="velcro">Hook & Loop (Velcro)</h3>
+          <p class="translate" data-translate-key="velcro-desc">Removable backing ideal for tactical gear and uniforms.
+          </p>
+        </div>
+        <div class="option-card">
+          <div class="option-icon">
+            <i class="fas fa-tape"></i>
+          </div>
+          <h3 class="translate" data-translate-key="adhesive">Self-Adhesive</h3>
+          <p class="translate" data-translate-key="adhesive-desc">Peel-and-stick backing for non-fabric surfaces.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- FAQ Section -->
+  <!-- <section class="faq-section reveal-section">
+    <div class="container">
+      <h2 class="section-title translate" data-translate-key="faq">Frequently Asked Questions</h2>
+      <div class="faq-accordion">
+        <div class="faq-item">
+          <div class="faq-question">
+            <h3 class="translate" data-translate-key="faq-1-q">What is the minimum order quantity?</h3>
+            <span class="faq-icon"><i class="fas fa-plus"></i></span>
+          </div>
+          <div class="faq-answer">
+            <p class="translate" data-translate-key="faq-1-a">Our minimum order quantity is 25 patches. For smaller
+              quantities, please contact us for custom pricing.</p>
+          </div>
+        </div>
+        <div class="faq-item">
+          <div class="faq-question">
+            <h3 class="translate" data-translate-key="faq-2-q">How long does production take?</h3>
+            <span class="faq-icon"><i class="fas fa-plus"></i></span>
+          </div>
+          <div class="faq-answer">
+            <p class="translate" data-translate-key="faq-2-a">Standard production time is 2-3 weeks after design
+              approval. Rush orders may be available for an additional fee.</p>
+          </div>
+        </div>
+        <div class="faq-item">
+          <div class="faq-question">
+            <h3 class="translate" data-translate-key="faq-3-q">Can you match specific colors?</h3>
+            <span class="faq-icon"><i class="fas fa-plus"></i></span>
+          </div>
+          <div class="faq-answer">
+            <p class="translate" data-translate-key="faq-3-a">Yes, we can match specific Pantone colors for your patches
+              to ensure brand consistency.</p>
+          </div>
+        </div>
+        <div class="faq-item">
+          <div class="faq-question">
+            <h3 class="translate" data-translate-key="faq-4-q">Do you offer design services?</h3>
+            <span class="faq-icon"><i class="fas fa-plus"></i></span>
+          </div>
+          <div class="faq-answer">
+            <p class="translate" data-translate-key="faq-4-a">Yes, our in-house design team can create custom patch
+              designs based on your ideas or refine existing artwork.</p>
+          </div>
+        </div>
+        <div class="faq-item">
+          <div class="faq-question">
+            <h3 class="translate" data-translate-key="faq-5-q">What file formats do you accept for designs?</h3>
+            <span class="faq-icon"><i class="fas fa-plus"></i></span>
+          </div>
+          <div class="faq-answer">
+            <p class="translate" data-translate-key="faq-5-a">We accept vector files (AI, EPS, PDF) for best results. We
+              can also work with high-resolution JPG or PNG files.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section> -->
+
+  <!-- CTA Section -->
+  <section class="cta reveal-section">
+    <div class="container">
+      <div class="cta-content">
+        <h2 class="translate" data-translate-key="cta-title">Ready to Order Your Custom Patches?</h2>
+        <p class="translate" data-translate-key="cta-text">Get in touch with our team for a free quote and design
+          consultation</p>
+        <a href="contact.html" class="btn btn-primary translate" data-translate-key="cta-button">Contact Us Today</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Accessibility Controls -->
+  <div class="accessibility-controls">
+    <button id="accessibility-toggle" aria-label="Accessibility options">
+      <i class="fas fa-universal-access"></i>
+    </button>
+    <div class="accessibility-panel">
+      <h3 class="translate" data-translate-key="accessibility-title">Accessibility Options</h3>
+      <div class="accessibility-option">
+        <label for="high-contrast" class="translate" data-translate-key="high-contrast">High Contrast</label>
+        <input type="checkbox" id="high-contrast">
+      </div>
+      <div class="accessibility-option">
+        <label for="text-to-speech" class="translate" data-translate-key="text-to-speech">Text to Speech</label>
+        <input type="checkbox" id="text-to-speech">
+      </div>
+      <div class="accessibility-option">
+        <label for="font-size" class="translate" data-translate-key="font-size">Font Size</label>
+        <div class="font-size-controls">
+          <button id="decrease-font" aria-label="Decrease font size">A-</button>
+          <button id="reset-font" aria-label="Reset font size">A</button>
+          <button id="increase-font" aria-label="Increase font size">A+</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Footer -->
+  <footer>
+    <div class="container">
+      <div class="footer-content">
+        <div class="footer-logo">
+          <img src="./PATCH-DISPATCHER-PSD.png" alt="Patch Dispatcher Logo" width="90" class="lazy-load">
+          <p class="translate" data-translate-key="footer-tagline">Quality patches for every purpose</p>
+        </div>
+        <div class="footer-links">
+          <div class="footer-column">
+            <h3 class="translate" data-translate-key="quick-links">Quick Links</h3>
+            <ul>
+              <li><a href="index.html" class="translate" data-translate-key="home">Home</a></li>
+              <li><a href="about.html" class="translate" data-translate-key="about">About</a></li>
+              <li><a href="services.html" class="translate" data-translate-key="services">Services</a></li>
+              <li><a href="contact.html" class="translate" data-translate-key="contact">Contact</a></li>
+            </ul>
+          </div>
+          <div class="footer-column">
+            <h3 class="translate" data-translate-key="services">Services</h3>
+            <ul>
+              <li><a href="services.html#military" class="translate" data-translate-key="military-patches">Embroidery
+                  Patches</a></li>
+              <li><a href="services.html#corporate" class="translate" data-translate-key="corporate-patches">PVC
+                  Patches</a></li>
+              <li><a href="services.html#fashion" class="translate" data-translate-key="fashion-patches">Chenille
+                  Patches</a></li>
+            </ul>
+          </div>
+          <div class="footer-column">
+            <h3 class="translate" data-translate-key="contact-us">Contact Us</h3>
+            <ul class="contact-info">
+              <li><i class="fas fa-map-marker-alt"></i> <span class="translate" data-translate-key="address">1660 Rose
+                  Lane Romeoville, IL 60446</span></li>
+              <li><i class="fas fa-phone"></i> <a href="tel:+13313338589">+1 331-333-8589</span></li>
+              <li><i class="fas fa-envelope"></i> <a
+                  href="mailto:patchdispatcher@gmail.com">patchdispatcher@gmail.com</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p class="copyright translate" data-translate-key="copyright">&copy; 2025 Patch Dispatcher. All rights reserved.
+        </p>
+        <div class="social-links">
+          <a href="https://www.facebook.com/profile.php?id=61577512170411" aria-label="Facebook"><i
+              class="fab fa-facebook-f"></i></a>
+          <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+          <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+          <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Page Transition Overlay -->
+  <div class="page-transition"></div>
+</body>
+
+</html>
