@@ -129,7 +129,7 @@ function initCustomCursor() {
 
 // Page Transitions
 function initPageTransitions() {
-  const links = document.querySelectorAll('a[href^="index"], a[href^="about"], a[href^="services"], a[href^="contact"]');
+  const links = document.querySelectorAll('a[href^=""]');
   const pageTransition = document.querySelector('.page-transition');
   
   links.forEach(link => {
