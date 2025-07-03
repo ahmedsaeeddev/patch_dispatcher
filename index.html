@@ -7,6 +7,7 @@
   <title>Patch Dispatcher - Home</title>
   <link rel="stylesheet" href="css/style.css">
   <link rel="stylesheet" href="css/home.css">
+  <link rel="stylesheet" href="css/bef-aft.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
   <script src="js/main.js" defer></script>
   <script src="js/home.js" defer></script>
@@ -53,9 +54,33 @@
           kinds according to the customer's needs and delivers them to the customer's doorstep without any hassle</p>
       </div>
       <div class="hero-image">
-        <img src="./herosection.jpg" alt="Premium Patches Showcase" class="lazy-load">
+        <!-- <img src="./herosection.jpg" alt="Premium Patches Showcase" class="lazy-load"> -->
+        <div class="container1">
+          <div class="slider-container1" id="sliderContainer1">
+            <!-- Before Image -->
+            <div class="image-container1 before-image1">
+              <img src="before.jpg" alt="Before Image" draggable="false">
+            </div>
+
+            <!-- After Image -->
+            <div class="image-container1 after-image1" id="afterImage1">
+              <img src="after.jpg" alt="After Image" draggable="false">
+            </div>
+
+            <!-- Slider Handle -->
+            <div class="slider-handle1" id="sliderHandle1">
+              <div class="handle-button1">
+                <div class="arrow-left1"></div>
+                <div class="arrow-right1"></div>
+              </div>
+            </div>
+
+            <!-- Slider Line -->
+            <div class="slider-line1" id="sliderLine1"></div>
+          </div>
+        </div>
+        <script src="/js/script.js"></script>
       </div>
-    </div>
   </section>
 
   <!-- Features Section -->
@@ -105,7 +130,7 @@
       <div class="patches-grid">
         <div class="patch-card">
           <div class="patch-image">
-            <img src="./embroidery-patches.JPG" alt="Embroidery Patch" class="lazy-load">
+            <img src="./embroidery-patch.png" alt="Embroidery Patch" class="lazy-load">
           </div>
           <div class="patch-info">
             <h3 class="translate" data-translate-key="patch-1-title">Embroidery Patches</h3>
@@ -116,7 +141,7 @@
         </div>
         <div class="patch-card">
           <div class="patch-image">
-            <img src="./pvc-rubber-patches.JPG" alt="PVC Rubber Patch" class="lazy-load">
+            <img src="./pvc-rubber-patches.png" alt="PVC Rubber Patch" class="lazy-load">
           </div>
           <div class="patch-info">
             <h3 class="translate" data-translate-key="patch-2-title">PVC Rubber Patches</h3>
@@ -265,13 +290,13 @@
               <li><a href="services.html#embroidery" class="translate"
                   data-translate-key="embroidery-patches">Embroidery
                   Patches</a></li>
+              <li><a href="services.html#pvc-rubber" class="translate" data-translate-key="pvc-rubber-patches">PVC
+                  Rubber Patches</a></li>
+              <li><a href="services.html#chenille" class="translate" data-translate-key="chenille-patches">Chenille
+                  Patches</a></li>
               <li><a href="services.html#sublimation" class="translate"
                   data-translate-key="sublimation-patches">Sublimation
                   Patches</a></li>
-              <li><a href="services.html#chenille" class="translate" data-translate-key="chenille-patches">Chenille
-                  Patches</a></li>
-              <li><a href="services.html#pvc-rubber" class="translate" data-translate-key="pvc-rubber-patches">PVC
-                  Rubber Patches</a></li>
               <li><a href="services.html#leather" class="translate" data-translate-key="leather-patches">Leather
                   Patches</a></li>
               <li><a href="services.html#woven" class="translate" data-translate-key="woven-patches">Woven Patches</a>
